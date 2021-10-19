@@ -1,0 +1,20 @@
+{
+  "name": "test-task-mobidev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "dotenv": "^10.0.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^2.5.0",
+    "koa-mongo": "^1.9.3",
+    "koa-router": "^10.1.1",
+    "mongodb": "^4.1.3"
+  }
+}

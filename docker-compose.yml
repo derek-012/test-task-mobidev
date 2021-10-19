@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  nodejs:
+    image: mobidev
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/usr/src/app
+    links:
+      - database
+  database:
+    image: mongo
+    volumes:
+      - data:/data/db
+    ports:
+      - 27017:27017
+
+volumes:
+  .:
+  data:
